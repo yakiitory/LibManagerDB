@@ -77,7 +77,6 @@ public class BookManager {
     String sqlQuery = "UPDATE Books SET Quantity = Quantity - ? WHERE Title = ? AND Author = ? AND PublishedYear = ?";
     try (Connection connection = DatabaseConnection.connectToDatabase();
          PreparedStatement statement = connection.prepareStatement(sqlQuery)) {
-
         statement.setInt(1, quantityToRemove);
         statement.setString(2, title);
         statement.setString(3, author);

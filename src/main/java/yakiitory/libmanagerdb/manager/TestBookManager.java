@@ -3,7 +3,8 @@ package yakiitory.libmanagerdb.manager;
 public class TestBookManager {
    public static void main(String[] args) {
     BookManager manager = new BookManager();
-
+    
+    // CRUD Operation Tests
     // Test Create: Add a new book with quantity
     boolean createResult = manager.createBook("1984", "George Orwell", 1949, 1); // Adding 5 copies of the book
     System.out.println("Create result: " + createResult);

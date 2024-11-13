@@ -7,6 +7,7 @@ import java.sql.Connection;
 public class TestConnection {
     public static void main(String[] args) {
         Connection testConnect = DatabaseConnection.connectToDatabase();
+        // Check for connection
         if (testConnect != null) {
             System.out.println("Database connected successfully!");
         } else {
