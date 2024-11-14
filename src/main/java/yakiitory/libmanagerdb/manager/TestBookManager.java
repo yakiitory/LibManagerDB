@@ -6,7 +6,7 @@ public class TestBookManager {
     
     // CRUD Operation Tests
     // Test Create: Add a new book with quantity
-    boolean createResult = manager.createBook("1984", "George Orwell", 1949, 1); // Adding 5 copies of the book
+    boolean createResult = manager.createBook("1984", "George Orwell", 1949, 2); // Adding 2 copies of the book
     System.out.println("Create result: " + createResult);
 
     // Test Read: Display all books in the database
@@ -14,7 +14,7 @@ public class TestBookManager {
     manager.readBooks(); // This will list all books, including the one just created
 
     // Test Update: Modify the quantity of an existing book
-    boolean updateResult = manager.updateBookQuantity("1984", "George Orwell", 1949, 2); // Update quantity to 10
+    boolean updateResult = manager.updateBookQuantity("1984", "George Orwell", 1949, 10); // Update quantity to 10
     System.out.println("\nUpdate result: " + updateResult);
         
     // Test Remove: Remove a specific quantity of a book (decrease by 1)
